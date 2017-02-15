@@ -1,0 +1,11 @@
+version: '2'
+services:
+  nmf:
+    image: kapil/opencv:latest
+    build: .
+    environment:
+      PORT: 9999
+    ports:
+      - "9999:9999"
+    volumes:
+      - .:/code
